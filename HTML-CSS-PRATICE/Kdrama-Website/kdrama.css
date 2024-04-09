@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 25px;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  scroll-margin: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 600px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #430f58;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #7c3698;
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
+}
+.secondary-btn {
+  font-size: 20px;
+  background-color: rgb(2, 2, 31);
+  color: white;
+}
+
+.hero-section {
+  background-image: url("Kdrama-Background3.jpg");
+  background-size: cover;
+  height: 80vh;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.hero-section .container {
+  height: 80%;
+  width: 100%;
+  border-radius: 9px;
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drama-section {
+  padding: 50px;
+  background-color: #7c3698;
+}
+.drama-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+}
+
+.ipad-iphone-img {
+  margin-bottom: -400px;
+  position: relative;
+  color: azure;
+}
+
+.about-drama {
+  color: black;
+  padding-top: 400px;
+  display: grid;
+  place-items: center;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section {
+  background-image: url("Kdrama-Background.jpg");
+  min-height: 800px;
+  display: grid;
+  font-size: 25px;
+  font-weight: 100;
+  place-items: center;
+  color: wheat;
+  text-align: center;
+}
+
+.video-section .container {
+  background: rgba(0, 0, 0, 0.5);
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-section,
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#img {
+  background-color: #430f58;
+  background-size: cover;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2px;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2px;
+}
+
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+  opacity: 0.3s;
+}
+.card:hover .card_content {
+  background: rgb(129, 76, 129);
+  color: wheat;
+  transform: translateY(0px);
+}
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -5.5rem;
+  margin-bottom: -3.5rem;
+  transition: 0.2s ease-in-out;
+  transform: translateY(100px);
+}
+
+.card_content h5 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer-lower {
+  background-color: purple;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
