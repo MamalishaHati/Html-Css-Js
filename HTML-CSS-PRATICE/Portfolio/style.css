@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+  
+  scroll-behavior: smooth;
+  
+}
+
+section {
+    scroll-margin: 100px;
+  }
+
+body {
+    background:  #023047; 
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar a {
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover{
+    text-decoration: underline;
+    color: rgb(165, 178, 198);
+}
+
+.home{
+    height: 100vh;
+    background: url("images/pic1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(165, 178, 198);
+}
+
+.home-content p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(165, 178, 198);
+    color: black;
+    z-index: 1;
+    overflow: hidden;
+    
+
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: black;
+}
+.btn-box a:nth-child(2)::before{
+    background: rgb(165, 178, 198);
+    
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    background-color: #023047;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.header-part {
+    position: absolute;
+    bottom: 50px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-part a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgb(165, 178, 198);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.header-part a:hover{
+    color: black;
+    background-color: cadetblue;
+}
